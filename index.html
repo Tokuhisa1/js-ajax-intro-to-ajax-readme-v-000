@@ -23,9 +23,16 @@
     <div class="flexbox-container">
       <div>
         <h3>Repositories</h3>
+        <!-- First, let's add a link to our HTML so we can trigger the request. -->
+        <a href="#" onclick="getRepositories()">Get Repositories</a>
+        <!-- Let's parse this response and list out the repositories on the
+        page. -->
+        <div id="repositories"></div>
       </div>
       <div>
         <h3>Commits</h3>
+        <!-- Let's create a place in our HTML to put the commits. -->
+        <div id="commits"></div>
       </div>
     </div>
     <script src="index.js"></script>
